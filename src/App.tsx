@@ -1,9 +1,12 @@
-import Post from "./comps/Post";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <div>
-      <Post/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </>
   )
 }
