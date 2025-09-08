@@ -71,10 +71,10 @@ body,html{
     justify-content: center;
     align-items: center;
     width: 100%;
-   min-height: 100%;
+   min-height: 80%;
     background-color: aqua;
     gap: 30px;
-    padding: 1em;
+    padding-top: 22%;
 }
 .post-single{
     width: 60%;

@@ -1,10 +1,11 @@
-import React from 'react'
-import Post from '../comps/Post'
+import Post from "../comps/application-layout/Post.tsx";
+// import Slogan from "../comps/application-layout/Slogan.tsx";
 
 export default function Home() {
   return (
     <>
-        <Post/>
+      {/* <Slogan /> */}
+      <Post />
     </>
-  )
+  );
 }
