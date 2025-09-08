@@ -1,0 +1,7 @@
+.logo-container{
+    width: 90px;
+    height: 89px;
+    border-radius:50% ;
+    background-color: aquamarine;
+    overflow: hidden;
+}

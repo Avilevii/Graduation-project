@@ -1,5 +1,5 @@
-import "../compsCss/Post.css";
-import postData from "../data.json";
+import "../../compsCss/Post.css";
+import postData from "../../data.json";
 
 export default function Post() {
   return (
