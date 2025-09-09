@@ -1,5 +1,4 @@
 .slogan-container{
-    /* position: absolute; */
     position: fixed;
     display: flex;
     justify-content: space-between;
