@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "src": "https://img.ice.co.il/giflib/news/7ice10042022.jpg",
+    "description": "חדשות 13",
+    "likes": "10",
+    "name": "ניר דבורי",
+    "date": "07/09/2025"
+  },
+  {
+    "id": "2",
+    "src": "https://cdn.i24news.tv/uploads/4c/6f/32/1d/31/ea/2b/34/bc/45/5a/69/e2/9d/82/b2/4c6f321d31ea2b34bc455a69e29d82b2.jpg?width=750&type=webp",
+    "description": "בן גביר וסמוטריץ'",
+    "likes": "20",
+    "name": "עמית סגל",
+    "date": "05/09/2025"
+  },
+  {
+    "id": "3",
+    "src": "https://img.haarets.co.il/bs/0000018b-1f8f-d2fc-a59f-df9fe3e90000/aa/c4/c1cae91540ab816d83ad003aa761/53895549.JPG?precrop=1755,1020,x82,y0&width=420&height=244&cmsprod",
+    "description": "נאום ביידן",
+    "likes": "1k",
+    "name": "דפנה ליאל",
+    "date": "22 / 06 / 2025"
+  },
+  {
+    "id": "4",
+    "src": "https://nws.report/wp-content/uploads/2023/08/breakingnws.webp",
+    "description": "מבזק חדשות",
+    "likes": "235",
+    "name": "news",
+    "date": "02 / 09 /2024"
+  }
+]
