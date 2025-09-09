@@ -18,29 +18,36 @@ export function resGetAllPosts(req, res) {
 export function resPostById(req, res) {
   const postId = req.params.id;
   if (!postId) return res.status(500).json({ msg: "You must enter value!" });
+  console.log(postId)
   try {
     const post = getPostById(postId);
+    if(!post){
+      return res.status(400).json({msg: 'There is no such post to return.'})
+    }
 
-    res.status(200).json(post);
+    res.status(200).json(post,);
   } catch (err) {
     console.error("Error", err);
   }
 }
 
-export function resCreatePost(req, res) {
-  const { id, img, description, likes, name } = req.body;
-  if (!id || !description || !likes || !name)
+export async function resCreatePost(req, res) {
+  const { id, imgId, description, likes, name } = req.body;
+  if (!id || !imgId || !description || !likes || !name)
     return res.status(500).json({ msg: "You must enter all fields" });
   try {
     const body = {
       id,
-      // img,
+      img:`${imgId}.png`,
       description,
       likes,
       name,
       date: new Date(),
     };
-    createPost(body);
+     const resFunction = await createPost(body);
+     if(!resFunction){
+      return res.status(400).json({msg: 'id exist'})
+     }
     return res.status(200).json({ msg: "post added" });
   } catch (err) {
     console.error("Error from server", err);
