@@ -1,5 +1,8 @@
-import postsData from './posts.json' with { type: 'json' };
+import postsData from '../posts.json' with { type: 'json' };
 import fs from 'fs';
+import { writeFile } from 'fs/promises';
+
+
 // מביא את כל הפוסטים
 export function getAllPosts(){
     return postsData;
@@ -8,7 +11,7 @@ export function getAllPosts(){
 // מביא את הפוסט לפי id;
 export function getPostById(id){
     
-        const postId = postsData.find(f => parseInt(f.id) === id);
+        const postId = postsData.find(f => f.id === id);
         if(postId) return postId;
         else{
             return;
@@ -16,22 +19,28 @@ export function getPostById(id){
 }
 
 // הוספת פוסט
-export function createPost(){
-    const dataJson = JSON.parse(fs.readFileSync('posts.json'));
-    const newData = {id: 1};
-    data.push(newData);
+export async function createPost(body){
+        const postId = postsData.find(f => f.id === body.id)
+        if(postId){return false}
 
-    fs.writeFileSync('posts.json', JSON.stringify(data, null, 2))
-    // const postId = postsData.find(f => f.id === body.id)
-    // if(postId)return;
+
+        postsData.push(body);
+        console.log(postsData);
+    try{
+     await writeFile('../server/posts.json', JSON.stringify(postsData, null, 2));
+        console.log(postsData)
+                console.log('New post added and posts.json updated successfully.');
+        return true
+    }
+    catch(err){
+        console.error("Error reading file", err)
+    }
+   
         
 
-    // console.log('The post added to list')
-    
-     
-    //  console.log(postsData);
-
 }
+getAllPosts();
 
-createPost();
+
+// createPost();
 
