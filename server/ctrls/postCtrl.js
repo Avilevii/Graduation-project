@@ -18,7 +18,6 @@ export function resGetAllPosts(req, res) {
 export function resPostById(req, res) {
   const postId = req.params.id;
   if (!postId) return res.status(500).json({ msg: "You must enter value!" });
-  console.log(postId)
   try {
     const post = getPostById(postId);
     if(!post){
@@ -31,6 +30,8 @@ export function resPostById(req, res) {
   }
 }
 
+
+// פונקציה ליצירת פוסט
 export async function resCreatePost(req, res) {
   const { id, imgId, description, likes, name } = req.body;
   if (!id || !imgId || !description || !likes || !name)
@@ -54,3 +55,4 @@ export async function resCreatePost(req, res) {
     return res.status(500).json({ msg: "Error from server" });
   }
 }
+
