@@ -11,7 +11,7 @@ export function getAllPosts(){
 // מביא את הפוסט לפי id;
 export function getPostById(id){
     
-        const postId = postsData.find(f => f.id === id);
+        const postId = postsData.find(f => f.id === parseInt(id));
         if(postId) return postId;
         else{
             return;
@@ -39,8 +39,5 @@ export async function createPost(body){
         
 
 }
-getAllPosts();
 
-
-// createPost();
 

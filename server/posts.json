@@ -1,31 +1,31 @@
 [
   {
-    "id": "2",
-    "img": "2.png",
+    "id": 2,
+    "imgId": "2.png",
     "description": "חדשות 13",
     "likes": "10",
     "name": "ניר דבורי",
     "date": "2025-09-09T08:43:43.234Z"
   },
   {
-    "id": "1",
-    "img": "1.png",
+    "id": 1,
+    "imgId": "1.png",
     "description": "חדשות 13",
     "likes": "10",
     "name": "ניר דבורי",
     "date": "2025-09-09T08:46:04.882Z"
   },
   {
-    "id": "3",
-    "img": "3.png",
+    "id": 3,
+    "imgId": "3.png",
     "description": "חדשות 13",
     "likes": "10",
     "name": "ניר דבורי",
     "date": "2025-09-09T08:46:26.261Z"
   },
   {
-    "id": "4",
-    "img": "4.png",
+    "id": 4,
+    "imgId": "4.png",
     "description": "חדשות 13",
     "likes": "10",
     "name": "ניר דבורי",
