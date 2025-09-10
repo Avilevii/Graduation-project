@@ -5,6 +5,7 @@ export default function NavLinkes() {
     <div className='linkes-container'>
         <Link to="/">HOME</Link>
       <Link to="getPostById">getPost</Link>
+      <Link to="createPost">createPost</Link>
     </div>
   )
 }

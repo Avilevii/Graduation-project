@@ -1,0 +1,15 @@
+.container-create-post{
+width: 100%;
+height: 100%;
+padding-top: 7em;
+
+}
+
+.form-create-post{
+width: 40%;
+height: 40%;
+display: flex;
+flex-direction: column;
+border: 2px solid black;
+gap: 5px;
+}

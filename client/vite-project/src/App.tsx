@@ -4,6 +4,7 @@ import AppLlayout from "./comps/application-layout/AppLlayout";
 import GetPostById from "./pages/GetPostById";
 
 import PostPage from "./pages/PostPage";
+import CreatPost from "./pages/CreatPost";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route index element={<Home/>}/>
         <Route path="getPostById" element={<GetPostById/>}/>
         <Route path="postPage" element={<PostPage/>}/>
+        <Route path="createPost" element={<CreatPost/>}/>
         
         </Route>
       </Routes>
