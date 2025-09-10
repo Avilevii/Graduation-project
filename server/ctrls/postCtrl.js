@@ -39,8 +39,8 @@ export async function resCreatePost(req, res) {
     return res.status(500).json({ msg: "You must enter all fields" });
   try {
     const body = {
-      id,
-      img:`${imgId}.png`,
+      id: Number(id),
+      imgId:`${imgId}.png`,
       description,
       likes,
       name,
@@ -51,6 +51,7 @@ export async function resCreatePost(req, res) {
       return res.status(400).json({msg: 'id exist'})
      }
     return res.status(200).json({ msg: "post added" });
+    console.log("hi")
   } catch (err) {
     console.error("Error from server", err);
     return res.status(500).json({ msg: "Error from server" });
