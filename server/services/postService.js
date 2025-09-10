@@ -35,9 +35,13 @@ export async function createPost(body){
     catch(err){
         console.error("Error reading file", err)
     }
-   
-        
-
 }
+
+export function dateTime(){
+    const dt = new Date();
+    const datatime = dt.getDate() + "." + (dt.getMonth() + 1) + "." + dt.getFullYear() + "  " + dt.getHours() + ":" + dt.getMinutes();
+    return datatime;
+}
+
 
 

@@ -2,6 +2,7 @@ import {
   getAllPosts,
   getPostById,
   createPost,
+  dateTime
 } from "../services/postService.js";
 
 // פונקציה שמביא ללקוח את כל הפוסטים
@@ -43,7 +44,7 @@ export async function resCreatePost(req, res) {
       description,
       likes,
       name,
-      date: new Date(),
+      date: dateTime()
     };
      const resFunction = await createPost(body);
      if(!resFunction){
