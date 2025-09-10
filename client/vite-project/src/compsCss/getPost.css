@@ -1,0 +1,21 @@
+#root{
+    background-color: rgb(212, 228, 228);
+}
+.getPost-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 8em;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+.btn-submit{
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export function usePosts() {
   type Post = {
     id: number;
-    img: string;
+    imgId: string;
     description: string;
     likes: string;
     name: string;

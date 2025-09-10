@@ -12,7 +12,7 @@ export default function Post() {
     <div className="container-post">
       {posts.map((i) => (
         <div key={i.id} className="post-single" >
-          <img src={`http://localhost:3000/${i.img}`} alt="post img" width={"40%"} height={"40%"} />
+          <img src={`http://localhost:3000/${i.imgId}`} alt="post img" width={"40%"} height={"40%"} />
           <p>Description: {i.description}</p>
           <p>Likes: {i.likes}</p>
           <p>Name: {i.name}</p>
