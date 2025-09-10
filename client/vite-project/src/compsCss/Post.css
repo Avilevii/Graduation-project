@@ -74,7 +74,7 @@ body,html{
    min-height: 80%;
     background-color: aqua;
     gap: 30px;
-    padding-top: 22%;
+    padding-top: 8em;
 }
 .post-single{
     width: 50%;
